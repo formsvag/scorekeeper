@@ -1,1 +1,63 @@
+* {
+   font-family: monospace;
+}
 
+*:focus {
+    outline: none;
+}
+
+.button {
+   background-color: darkcyan;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+.button_red {
+   background-color: crimson;
+}
+
+.button_green {
+   background-color: #4CAF50;
+}
+
+div.PlayerA {
+   font-size: 32px;
+   font-weight: bold;
+   grid-row: 2;
+   grid-column: 1;
+   text-align: center;
+}
+
+div.PlayerB {
+   font-size: 32px;
+   font-weight: bold;
+   grid-row: 2;
+   grid-column: 2;
+   text-align: center;
+}
+
+div.New {
+   text-align: center;
+   grid-column: 1 / span 2;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: auto auto;
+}
+
+.score {
+    padding: 15px;
+    text-align: center;
+    width: 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;    
+}
