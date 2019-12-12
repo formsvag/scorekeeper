@@ -13,9 +13,6 @@ function Add(id) {
     document.getElementById(id).innerHTML = clicks;
  };
 
-/*
-  Function to save previous week/session to db
- */
 function New() {
     // Save data to db
     Clear();
