@@ -10,6 +10,7 @@
    <div class="grid">
       <div class="header" id="header">
          <br>
+         <?php include 'db.php';?>
       </div>
       <div class="PlayerA" id="PlayerA">
          <a>Jonas</a><br> 

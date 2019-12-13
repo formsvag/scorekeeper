@@ -22,3 +22,5 @@ function Clear() {
    document.getElementById('A').innerHTML = 0;
    document.getElementById('B').innerHTML = 0;
 }
+
+// check this for charts: https://www.youtube.com/watch?v=5-ptp9tRApM
