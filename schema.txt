@@ -1,0 +1,19 @@
+   
+   +--------------------------------------------------------------------------+
+   | SCORE                                                                    |
+   +----------+----------+-----------------+-----------------+----------------|
+   | player_a | player_b | player_a_points | player_b_points | timestamp      |
+   +----------+----------+-----------------+-----------------+----------------+
+   |    alpha |     beta |               1 |                 | 20191216090130 |
+   |    alpha |     beta |                 |               1 | 20191216090152 |   
+   |    alpha |     beta |                 |               1 | 20191216090222 |
+   |    alpha |     beta |               1 |                 | 20191216090321 |      
+   |      ... |      ... |             ... |             ... |            ... |   
+   +----------+----------+-----------------+-----------------+----------------+
+   
+    - get data for current yearweek, should handle new week automatically
+	-     get sum of points for each player 
+    -     get player names
+	- each click on +/- adds new record 1/-1
+    -     add point
+    -     remove point
