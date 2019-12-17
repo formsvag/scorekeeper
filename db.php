@@ -1,18 +1,14 @@
 <?php
-   echo 'lets go';
 
    $server_name = "hoijertz.com.mysql";
    $user_name = "hoijertz_com";
    $password = "ad4Cnf2L";
    $db_name = "hoijertz_com";
 
-   $conn = new mysql_connect($server_name, $user_name, $password);
-   
-   // Check connection
-   if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
+   $conn= new mysqli($server_name, $user_name, $password, $db_name);
+   if ($mysqli->connect_errno) {
+      echo "Failed to connect to MySQL: (" . $conn->connect_errno . ") " . $conn->connect_error;
    }
-   
-   echo "Connected successfully";
-   mysql_close($conn);
+   echo "SUCCESS: " . $conn->host_info . "\n";
+
 ?>
