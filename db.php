@@ -6,9 +6,14 @@
    $db_name = "hoijertz_com";
 
    $conn= new mysqli($server_name, $user_name, $password, $db_name);
+   /* 
+   // FOR DEBUGGING THE DB CONNECTION:
    if ($mysqli->connect_errno) {
       echo "Failed to connect to MySQL: (" . $conn->connect_errno . ") " . $conn->connect_error;
    }
    echo "SUCCESS: " . $conn->host_info . "\n";
+   */
+  
+
 
 ?>
