@@ -14,6 +14,23 @@
    echo "SUCCESS: " . $conn->host_info . "\n";
    */
   
-
+  if (isset($_POST['save'])) {
+     $name = $_POST['name'];
+     $comment = $_POST['comment'];
+     $sql = "INSERT INTO comments (name, comment) VALUES ('{$name}', '{$comment}')";
+     if (mysqli_query($conn, $sql)) {
+        $id = mysqli_insert_id($conn);
+        $saved_comment = '<div class="comment_box">
+                             <span class="delete" data-id="' . $id . '" >delete</span>
+                             <span class="edit" data-id="' . $id . '">edit</span>
+                             <div class="display_name">'. $name .'</div>
+                             <div class="comment_text">'. $comment .'</div>
+                          </div>';
+        echo $saved_comment;
+    }else {
+      echo "Error: ". mysqli_error($conn);
+    }
+    exit();
+   }
 
 ?>

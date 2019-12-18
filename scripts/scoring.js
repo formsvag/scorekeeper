@@ -45,5 +45,7 @@ $(document).ready(function(){
      });
    });
  });
+ /******/
+ 
 
 // check this for charts: https://www.youtube.com/watch?v=5-ptp9tRApM
